@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import AppContext from '../../context/NxtWatch'
 import {
@@ -29,8 +30,7 @@ class LoginPage extends Component {
     if (isChecked === false) {
       return 'password'
     }
-      return 'text'
-    
+    return 'text'
   }
 
   onChangeType = () => {
@@ -70,6 +70,10 @@ class LoginPage extends Component {
 
   render() {
     const {username, password, errorMsg, showError} = this.state
+    const jwtToken = Cookies.get('jwt_token')
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
     return (
       <AppContext.Consumer>
         {value => {
