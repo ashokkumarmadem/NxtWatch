@@ -1,0 +1,120 @@
+.close-icon {
+  height: 20px;
+  width: 20px;
+}
+.banner-logo {
+  height: 35px;
+  width: 140px;
+}
+.banner-text {
+  font-family: Roboto;
+  color: black;
+  font-size: 20px;
+  width: 80%;
+}
+.get-btn {
+  font-family: 'Roboto';
+  border: 1.5px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+  padding: 8px 16px 8px 16px;
+  font-weight: 550;
+}
+.loading-container {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-btn {
+  background-color: transparent;
+  border: 1px solid;
+}
+.channel-logo {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-right: 12px;
+}
+.desc {
+  font-family: Roboto;
+  color: #616e7c;
+}
+.failure-img {
+  width: 40%;
+}
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 18px;
+}
+.retry-btn {
+  background-color: rgb(5, 98, 239);
+  color: white;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 16px 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .banner-text {
+    font-size: 16px;
+    width: 70%;
+    font-weight: 500;
+  }
+  .banner-logo {
+    height: 24px;
+    width: 100px;
+  }
+}
+.thumbnai-img {
+  height: 30vh;
+  width: 100%;
+  border-radius: 4px;
+}
+.no-search-img {
+  width: 30%;
+}
+.no-search-btn {
+  background-color: rgb(37, 55, 217);
+  color: white;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 550;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+  border: none;
+}
+@media screen and (max-width: 568px) {
+  .thumbnai-img {
+    width: 100vw;
+    height: 30vh;
+  }
+  .lg-con {
+    display: none;
+  }
+}
+@media screen and (min-width: 568px) {
+  .desc {
+    font-size: 16px;
+    margin: 6px;
+  }
+  .loading-container {
+    min-height: 60vh;
+    width: 83vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.nav-link {
+  text-decoration: none;
+}

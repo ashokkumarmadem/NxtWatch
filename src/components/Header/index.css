@@ -1,0 +1,73 @@
+.sun {
+  height: 26px;
+  width: 26px;
+}
+.ham {
+  height: 26px;
+  width: 26px;
+  color: white;
+}
+.white {
+  color: white;
+}
+.black {
+  color: black;
+}
+.popup-content {
+  height: 140px;
+  width: 280px;
+  border-radius: 6px;
+}
+.canc-btn {
+  background-color: #c9c2c2;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 90px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-family: Roboto;
+  font-weight: 550;
+  color: white;
+}
+.confirm-btn {
+  background-color: rgb(23, 105, 227);
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 90px;
+  border-radius: 4px;
+  margin-left: 8px;
+  font-family: Roboto;
+  font-weight: 550;
+  color: white;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.p-text {
+  font-family: Roboto;
+  color: rgb(14, 8, 8);
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+.profile-img {
+  height: 34px;
+  width: 34px;
+}
+.link {
+  text-decoration: none;
+}
+.dis {
+  padding-left: 0px;
+}
+@media screen and (min-width: 768px) {
+  .sun {
+    height: 35px;
+    width: 35px;
+  }
+}
