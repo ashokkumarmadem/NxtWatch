@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 import {formatDistanceToNow} from 'date-fns'
-import {BiLike,BiDislike,BiListPlus} from 'react-icons/bi'
+import {BiLike, BiDislike, BiListPlus} from 'react-icons/bi'
 import AppContext from '../../context/NxtWatch'
 import Header from '../Header'
 import Sidebar from '../Sidebar'
@@ -132,7 +132,7 @@ class VideoItemDetails extends Component {
                     <BiLike size={20} className={`icon ${applyColor}`} />{' '}
                     <span className={`like-text ${applyColor}`}>Like</span>
                   </button>
-                  <button onClick={onClickDislike} className='like-btn'>
+                  <button onClick={onClickDislike} className="like-btn">
                     <BiDislike
                       size={20}
                       className={`icon ${applyDislikedColor}`}
@@ -175,13 +175,11 @@ class VideoItemDetails extends Component {
     )
   }
 
-  displayLoadingView = () => 
-    (
-      <div className="loading-container-video">
-        <Loader type="ThreeDots" color=" #3b82f6" height="50" width="50" />
-      </div>
-    )
-  
+  displayLoadingView = () => (
+    <div className="loading-container-video">
+      <Loader type="ThreeDots" color=" #3b82f6" height="50" width="50" />
+    </div>
+  )
 
   onClickRetry = () => {
     this.getVideoDetails()
@@ -218,7 +216,7 @@ class VideoItemDetails extends Component {
         return null
     }
   }
-  
+
   render() {
     return (
       <AppContext.Consumer>

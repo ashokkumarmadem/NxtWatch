@@ -48,23 +48,22 @@ class LoginPage extends Component {
   submitData = async event => {
     const {username, password} = this.state
     event.preventDefault()
-    if (username !== '' && password !== '') {
-      const userDetails = {username, password}
-      const api = 'https://apis.ccbp.in/login'
-      const options = {
-        method: 'POST',
-        body: JSON.stringify(userDetails),
-      }
-      const response = await fetch(api, options)
-      const data = await response.json()
-      if (response.ok === true) {
-        const token = data.jwt_token
-        Cookies.set('jwt_token', token, {expires: 30})
-        const {history} = this.props
-        history.push('/')
-      } else {
-        this.setState({errorMsg: data.error_msg, showError: true})
-      }
+
+    const userDetails = {username, password}
+    const api = 'https://apis.ccbp.in/login'
+    const options = {
+      method: 'POST',
+      body: JSON.stringify(userDetails),
+    }
+    const response = await fetch(api, options)
+    const data = await response.json()
+    if (response.ok === true) {
+      const token = data.jwt_token
+      Cookies.set('jwt_token', token, {expires: 30})
+      const {history} = this.props
+      history.push('/')
+    } else {
+      this.setState({errorMsg: data.error_msg, showError: true})
     }
   }
 

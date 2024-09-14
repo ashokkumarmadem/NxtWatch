@@ -108,13 +108,11 @@ class Gaming extends Component {
     )
   }
 
-  displayLoadingView = mode => 
-    (
-      <div className="loading-container-tr">
-        <Loader type="ThreeDots" color=" #3b82f6" height="50" width="50" />
-      </div>
-    )
-  
+  displayLoadingView = mode => (
+    <div className="loading-container-tr">
+      <Loader type="ThreeDots" color=" #3b82f6" height="50" width="50" />
+    </div>
+  )
 
   onClickRetry = () => {
     this.getGamingDetails()

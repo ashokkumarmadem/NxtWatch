@@ -138,13 +138,12 @@ class Trending extends Component {
     )
   }
 
-  displayLoadingView = () => 
-    (
-      <div className="loading-container-tr">
-        <Loader type="ThreeDots" color=" #3b82f6" height="50" width="50" />
-      </div>
-    )
-  
+  displayLoadingView = () => (
+    <div className="loading-container-tr">
+      <Loader type="ThreeDots" color=" #3b82f6" height="50" width="50" />
+    </div>
+  )
+
   onClickRetry = () => {
     this.getTrendingVideoDetails()
   }
@@ -180,7 +179,7 @@ class Trending extends Component {
         return null
     }
   }
-  
+
   render() {
     return (
       <AppContext.Consumer>

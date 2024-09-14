@@ -3,7 +3,7 @@
   border-radius: 8px;
   margin-right: 5vw;
 }
-.failure-container-trending{
+.failure-container-trending {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,12 +11,12 @@
   padding: 14px;
   min-height: 120vh;
 }
-.loading-container-tr{
-    min-height:120vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.loading-container-tr {
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 568px) {
   .trending-image {
     width: 100%;
@@ -27,7 +27,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
-  
 }
